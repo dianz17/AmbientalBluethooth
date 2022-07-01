@@ -1,0 +1,44 @@
+public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b) {
+                    address = ( (TextView) spinPaired.getSelectedView().findViewById(R.id.txtAddress)
+                            ).getText().toString();
+                    createConnectThread = new CreateConnectThread(address);
+                    createConnectThread.start();
+//                    try {
+//                        address = ( (TextView) spinPaired.getSelectedView().findViewById(R.id.txtAddress)
+//                                    ).getText().toString();
+
+//                        Toast.makeText(getApplicationContext(), address,
+//                                Toast.LENGTH_SHORT).show();
+//                        if(btSocket == null) {
+//                            // set the device with the address
+//                            BluetoothDevice device = bluetoothAdapter.getRemoteDevice(address);
+//                            btSocket = device.createInsecureRfcommSocketToServiceRecord(myUUID);
+//                            btSocket.connect(); // start connection
+//                            Toast.makeText(getApplicationContext(), "Module connected successfully.",
+//                                    Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(getApplicationContext(), "Module already connected.",
+//                                    Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(getApplicationContext(), btSocket.isConnected() + "",
+//                                    Toast.LENGTH_SHORT).show();
+//                        }
+//                    } catch(Exception e) {
+//                        Toast.makeText(getApplicationContext(), "Error in socket",
+//                                Toast.LENGTH_SHORT).show();
+//                        btnConnect.setChecked(false);
+//                    }
+                } else {
+//                    try {
+//                        // close connection to socket
+//                        btSocket.close();
+//                        Toast.makeText(getApplicationContext(), "Socket closed",
+//                                Toast.LENGTH_SHORT).show();
+//                    } catch (Exception e) {
+//                        Toast.makeText(getApplicationContext(), "Error in socket",
+//                                Toast.LENGTH_SHORT).show();
+//                        btnConnect.setChecked(true);
+//                    }
+                }
+            }
+
