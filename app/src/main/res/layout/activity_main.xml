@@ -72,7 +72,8 @@
             android:layout_marginRight="20dp"
             android:background="#FFFFFF"
             android:inputType="textMultiLine"
-            android:textAlignment="center"
+            android:gravity="bottom"
+
             android:textColor="#000000"
             android:scrollbars="vertical"
             android:textSize="14sp" />
@@ -126,7 +127,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="scrollbars movement method"
+        android:text="gravity bottom"
         android:textSize="20sp" />
 
 </LinearLayout>
