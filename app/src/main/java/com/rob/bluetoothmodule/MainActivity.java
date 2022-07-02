@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -77,7 +78,18 @@ public class MainActivity extends AppCompatActivity {
         btnKill = findViewById(R.id.btnKill);
         spinPaired = findViewById(R.id.spinPaired);
         progressBar = findViewById(R.id.progressBar);
-        scrollView = (ScrollView)findViewById(R.id.scrollView);
+
+        //Scrollview abajo
+//        scrollView = (ScrollView)findViewById(R.id.scrollView);
+//
+//        scrollView.post(new Runnable() {
+//            public void run() {
+//                scrollView.fullScroll(View.FOCUS_DOWN);
+//            }
+//        });
+
+        //Cambio
+        textView.setMovementMethod(new ScrollingMovementMethod());
 
         pairedList = new ArrayList<>();
         adapterPaired = new ListAdapter(getApplicationContext(), pairedList);
@@ -225,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
                                     counter=0;
                                 }
 
-                                scrollView.fullScroll(scrollView.FOCUS_DOWN);
+
 
                                 break;
                             case -1:
