@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinPaired;
     TextView textView;
     ProgressBar progressBar;
+    ScrollView scrollView;
 
     BluetoothAdapter bluetoothAdapter;
     List<DeviceInfo> pairedList;
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         btnKill = findViewById(R.id.btnKill);
         spinPaired = findViewById(R.id.spinPaired);
         progressBar = findViewById(R.id.progressBar);
+        scrollView = (ScrollView)findViewById(R.id.scrollView);
 
         pairedList = new ArrayList<>();
         adapterPaired = new ListAdapter(getApplicationContext(), pairedList);
@@ -221,6 +224,8 @@ public class MainActivity extends AppCompatActivity {
                                     textView.append("Dióxido de Carbono:" + arduinoMsg + "\n");
                                     counter=0;
                                 }
+
+                                scrollView.fullScroll(scrollView.FOCUS_DOWN);
 
                                 break;
                             case -1:
