@@ -17,9 +17,12 @@
         android:id="@+id/btnBluetooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom2"
         android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+
 
         android:paddingHorizontal="20dp"
         android:textOff="Bluetooth Off"
@@ -45,12 +48,15 @@
 
         <ToggleButton
             android:id="@+id/btnConnect"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/custom3"
             android:checked="false"
             android:enabled="false"
             android:fontFamily="@font/open_sans"
+            android:textColor="#FFF"
+            android:textStyle="bold"
             android:textOff="Disconnected"
             android:textOn="Connected" />
     </LinearLayout>
@@ -58,7 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="233dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -92,7 +98,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center">
 
         <Button
@@ -121,14 +127,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
         android:orientation="vertical"
         android:visibility="invisible">
 
         <TextView
-            android:layout_width="4dp"
-            android:layout_height="3dp"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
             android:layout_marginBottom="10dp"
             android:text="Light:"
             android:textAlignment="center"
@@ -137,12 +143,18 @@
 
         <ToggleButton
             android:id="@+id/btnLight"
-            android:layout_width="4dp"
-            android:layout_height="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:checked="false"
             android:enabled="false"
             android:text="LIGHT"
             android:visibility="invisible" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imgan" />
 
 </LinearLayout>
