@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/layout/activity_main.xml" value="0.27717391304347827" />
+        <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/drawable/custom1.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/drawable/custom2.xml" value="0.4036458333333333" />
+        <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/layout/activity_main_original.xml" value="0.27717391304347827" />
         <entry key="..\:/Dowload2/proyecto1_4/BluetoothModule1/BluetoothModule/app/src/main/res/layout/bluetooth_list.xml" value="0.27717391304347827" />
       </map>

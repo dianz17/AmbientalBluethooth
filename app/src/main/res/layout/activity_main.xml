@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9EEBFF"
+    android:background="#F8F6F7"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:scrollbarSize="4dp"
@@ -19,6 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="#FFFFFF"
+        android:fontFamily="@font/open_sans"
+
         android:paddingHorizontal="20dp"
         android:textOff="Bluetooth Off"
         android:textOn="Bluetooth On" />
@@ -48,59 +50,43 @@
             android:layout_marginLeft="10dp"
             android:checked="false"
             android:enabled="false"
+            android:fontFamily="@font/open_sans"
             android:textOff="Disconnected"
             android:textOn="Connected" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="233dp"
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:orientation="horizontal">
 
-<!--        <ScrollView-->
-<!--            android:id="@+id/scrollView"-->
-<!--            android:layout_width="170dp"-->
-<!--            android:layout_height="130dp"-->
-<!--            android:fillViewport="true">-->
+        <!--        <ScrollView-->
+        <!--            android:id="@+id/scrollView"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="130dp"-->
+        <!--            android:fillViewport="true">-->
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="170dp"
-            android:layout_height="130dp"
+            android:layout_width="315dp"
+            android:layout_height="222dp"
             android:layout_marginRight="20dp"
-            android:background="#FFFFFF"
-            android:inputType="textMultiLine"
+            android:background="#FFFF"
+            android:elevation="5dp"
+            android:fontFamily="@font/open_sans"
+
             android:gravity="bottom"
-
-            android:textColor="#000000"
+            android:inputType="textMultiLine"
             android:scrollbars="vertical"
+            android:shadowColor="#5E5E5E"
+            android:shadowDy="5"
+            android:textColor="#000000"
             android:textSize="14sp" />
-<!--        </ScrollView>-->
+        <!--        </ScrollView>-->
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="Light:"
-                android:textAlignment="center"
-                android:textColor="#000000" />
-
-            <ToggleButton
-                android:id="@+id/btnLight"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:enabled="false"
-                android:text="LIGHT" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -112,22 +98,51 @@
         <Button
             android:id="@+id/btnClear"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Clear Serial" />
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom1"
+            android:fontFamily="@font/open_sans"
+            android:text="Clear Serial"
+
+            android:textColor="#FFF"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnKill"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:layout_marginLeft="20dp"
-            android:text="Kill All" />
+            android:background="@drawable/custom1"
+            android:fontFamily="@font/open_sans"
+            android:text="Kill All"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="gravity bottom"
-        android:textSize="20sp" />
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="Light:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@+id/btnLight"
+            android:layout_width="4dp"
+            android:layout_height="7dp"
+            android:checked="false"
+            android:enabled="false"
+            android:text="LIGHT"
+            android:visibility="invisible" />
+    </LinearLayout>
 
 </LinearLayout>
