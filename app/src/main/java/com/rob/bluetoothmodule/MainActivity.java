@@ -210,15 +210,15 @@ public class MainActivity extends AppCompatActivity {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
                                 if (counter == 0) {
-                                    textView.append("Lectura de Metano/Butano:" + arduinoMsg + "\n");
+                                    textView.append("Metano/Butano:" + arduinoMsg + "\n");
                                     counter++;
                                 }
                                 else if (counter == 1){
-                                    textView.append("Lectura de Monóxido de Carbono:" + arduinoMsg + "\n");
+                                    textView.append("Monóxido de Carbono:" + arduinoMsg + "\n");
                                     counter++;
                                 }
                                 else if(counter==2){
-                                    textView.append("Lectura de Dióxido de Carbono:" + arduinoMsg + "\n");
+                                    textView.append("Dióxido de Carbono:" + arduinoMsg + "\n");
                                     counter=0;
                                 }
 
