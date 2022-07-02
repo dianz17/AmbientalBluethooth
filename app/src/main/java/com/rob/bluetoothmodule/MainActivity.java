@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int ENABLE_BT_CODE = 1;
     private static final int DISCOVERABLE_DURATION = 300;
     private static final int DISCOVERABLE_BT_REQUEST_CODE = 2;
+    private int counter = 0;
 
     static final UUID myUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
@@ -208,7 +209,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (msg.arg1) {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
-                                textView.append(arduinoMsg + "\n");
+                                if (counter == 0) {
+                                    textView.append("Lectura de Metano/Butano:" + arduinoMsg + "\n");
+                                    counter++;
+                                }
+                                else if (counter == 1){
+                                    textView.append("Lectura de Monóxido de Carbono:" + arduinoMsg + "\n");
+                                    counter++;
+                                }
+                                else if(counter==2){
+                                    textView.append("Lectura de Dióxido de Carbono:" + arduinoMsg + "\n");
+                                    counter=0;
+                                }
+
                                 break;
                             case -1:
                                 //btnConnect.setChecked(false);
