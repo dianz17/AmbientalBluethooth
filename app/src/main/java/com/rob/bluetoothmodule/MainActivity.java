@@ -224,18 +224,37 @@ public class MainActivity extends AppCompatActivity {
                         switch (msg.arg1) {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
-                                if (counter == 0) {
-                                    textView.append("Metano/Butano:" + arduinoMsg + "\n");
+
+                                if (arduinoMsg == "2" && counter==0) {
+                                    textView.append("Metano/Butano: ");
                                     counter++;
                                 }
-                                else if (counter == 1){
-                                    textView.append("Monóxido de Carbono:" + arduinoMsg + "\n");
+                                else if (arduinoMsg == "9" && counter==0){
+                                    textView.append("Monóxido de Carbono: ");
                                     counter++;
                                 }
-                                else if(counter==2){
-                                    textView.append("Dióxido de Carbono:" + arduinoMsg + "\n");
+                                else if(arduinoMsg == "135" && counter==0){
+                                    textView.append("Dióxido de Carbono: ");
+                                    counter++;
+                                }
+                                else if(counter == 1){
+                                    textView.append(arduinoMsg + "\n");
                                     counter=0;
                                 }
+
+
+//                                if (counter == 0) {
+//                                    textView.append("Metano/Butano:" + arduinoMsg + "\n");
+//                                    counter++;
+//                                }
+//                                else if (counter == 1){
+//                                    textView.append("Monóxido de Carbono:" + arduinoMsg + "\n");
+//                                    counter++;
+//                                }
+//                                else if(counter==2){
+//                                    textView.append("Dióxido de Carbono:" + arduinoMsg + "\n");
+//                                    counter=0;
+//                                }
 
 
 
