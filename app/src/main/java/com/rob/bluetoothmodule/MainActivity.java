@@ -225,11 +225,11 @@ public class MainActivity extends AppCompatActivity {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
                                 if (counter == 0){
-                                    textView.append("MQ_" + arduinoMsg + ":");
+                                    textView.append("MQ_" + arduinoMsg + ": ");
                                     counter++;
                                 }
                                 else if (counter == 1) {
-                                    textView.append(" " + arduinoMsg + "\n");
+                                    textView.append(arduinoMsg + "\n");
                                     counter=0;
                                 }
 
