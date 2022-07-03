@@ -225,15 +225,15 @@ public class MainActivity extends AppCompatActivity {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
 
-                                if (arduinoMsg == "2" && counter==0) {
+                                if (arduinoMsg.equals("2") && counter==0) {
                                     textView.append("Metano/Butano: ");
                                     counter++;
                                 }
-                                else if (arduinoMsg == "9" && counter==0){
+                                else if (arduinoMsg.equals("9") && counter==0){
                                     textView.append("Monóxido de Carbono: ");
                                     counter++;
                                 }
-                                else if(arduinoMsg == "135" && counter==0){
+                                else if(arduinoMsg.equals("135") && counter==0){
                                     textView.append("Dióxido de Carbono: ");
                                     counter++;
                                 }
