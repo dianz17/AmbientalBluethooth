@@ -23,7 +23,7 @@
         android:id="@+id/btnBluetooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custom2"
         android:fontFamily="@font/open_sans"
         android:textStyle="bold"
@@ -37,13 +37,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/spinPaired"
             android:layout_width="180dp"
+
             android:layout_height="wrap_content" />
 
         <ProgressBar
@@ -56,7 +57,7 @@
             android:id="@+id/btnConnect"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:background="@drawable/custom3"
             android:checked="false"
             android:enabled="false"
@@ -69,8 +70,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="233dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -83,7 +84,7 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="315dp"
-            android:layout_height="222dp"
+            android:layout_height="204dp"
             android:layout_marginRight="20dp"
             android:background="#FFFF"
             android:elevation="5dp"
@@ -104,7 +105,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:gravity="center">
 
         <Button
@@ -161,6 +162,6 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/imgan" />
+        app:srcCompat="@drawable/valoress" />
 
 </LinearLayout>
