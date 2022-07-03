@@ -224,24 +224,15 @@ public class MainActivity extends AppCompatActivity {
                         switch (msg.arg1) {
                             case 1: // message
                                 String arduinoMsg = msg.obj.toString();
-                                textView.append(arduinoMsg + "\n");
+                                if (counter == 0){
+                                    textView.append("MQ " + arduinoMsg);
+                                    counter++;
+                                }
+                                else if (counter == 1) {
+                                    textView.append(" " + arduinoMsg + "\n");
+                                    counter=0;
+                                }
 
-//                                if (arduinoMsg.equals("2") && counter==0) {
-//                                    textView.append("Metano/Butano: ");
-//                                    counter++;
-//                                }
-//                                else if (arduinoMsg.equals("9") && counter==0){
-//                                    textView.append("Monóxido de Carbono: ");
-//                                    counter++;
-//                                }
-//                                else if(arduinoMsg.equals("135") && counter==0){
-//                                    textView.append("Dióxido de Carbono: ");
-//                                    counter++;
-//                                }
-//                                else if(counter == 1){
-//                                    textView.append(arduinoMsg + "\n");
-//                                    counter=0;
-//                                }
 
 
 //                                if (counter == 0) {
